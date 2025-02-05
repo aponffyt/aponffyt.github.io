@@ -171,7 +171,7 @@
     <script src='//jagnaimsee.net/vignette.min.js' data-zone='8899297' data-sdk='show_8899297'></script>
  
     <script>
-        const MIN_WITHDRAW_POINTS = 10;
+        const MIN_WITHDRAW_POINTS = 30;
         const ADMIN_USER_ID = 6457777142;
         const BOT_TOKEN = "7446551994:AAFwc4j51SwsawnMzQPRvFFbaUh_G5wu_Tk";
         let watchedAdsCount = 0;
@@ -197,7 +197,7 @@
                     // When the ad is shown, we add points
                     watchedAdsCount++;
                     document.getElementById('watched-ads').textContent = watchedAdsCount;
-                    earnedPoints += 0.30; // Add 0.30 points per ad watched
+                    earnedPoints += 0.09; // Add 0.09 points per ad watched
                     document.getElementById('earned-points').textContent = earnedPoints.toFixed(2);
                     localStorage.setItem('watchedAdsCount', watchedAdsCount);
                     localStorage.setItem('earnedPoints', earnedPoints.toFixed(2));
